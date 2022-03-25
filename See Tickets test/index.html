@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<head>
+
+    <title>See Tickets - Search Results</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+
+<body>
+
+    <header>
+        <a href="index.html" title="See Tickets Home">
+        <img class="header-logo" src="http://c.ststat.net/content/seetickets/logos/SeeTickets_570x96_black_transparent.png" alt="company logo" >
+        </a>
+    </header>
+    
+    <section class="search-bar">
+
+        <input class="g-site-search-term" id="g-site-search-input" name="q" type="search" autocomplete="off" maxlength="50" placeholder="Search artist, event, venue, location..." />
+
+        <div class="buttons-container">
+
+            <p id="search" class="search-buttons" type="submit">Search</p>
+
+            <p id="refine" class="search-buttons">Refine your search</p>
+
+        </div>
+
+
+        
+        <fieldset class="filters-checkbox" id="checkboxes">
+
+            <h2>Event type:</h2>   
+            
+            <ul class="browse-cats">
+                <li>
+                <input onclick='check(this.id)'type="checkbox" id="category2"/>
+                <label for="category2">Dance And Clubs</label>
+                </li>
+
+                <li>
+                <input onclick='check(this.id)' type="checkbox" id="category3"/>
+                <label for="category3">Rock</label>
+                </li>
+
+                <li>
+                <input onclick='check(this.id)' type="checkbox" id="category4"/>
+                <label for="category4">Pop</label>
+                </li>
+
+                <li>
+                <input onclick='check(this.id)' type="checkbox" id="category40"/>
+                <label for="category40">Theatre</label>
+                </li>
+
+                <li>
+                <input onclick='check(this.id)' type="checkbox" id="category14"/>
+                <label for="category14">Festival</label>
+                </li>
+
+                <li>
+                <input onclick='check(this.id)' type="checkbox" id="category27"/>
+                <label for="category27">Special Events</label>
+                </li>
+
+            </ul>
+        </fieldset>
+</section>
+
+
+    <div id="search-results" data-your-results></div>
+    <section class="search-result-container" data-result-container></section>
+
+</body>
+</html>
